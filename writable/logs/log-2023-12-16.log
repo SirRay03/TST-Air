@@ -569,3 +569,57 @@ in APPPATH\Views\add_airport.php on line 88.
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RaySi\\TST\\onlyflights\\public\\index.php')
+CRITICAL - 2023-12-16 19:24:55 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\FlightController.php(20): CodeIgniter\Model->__call('getFlight', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->viewFlightPage()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RaySi\\TST\\onlyflights\\public\\index.php')
+CRITICAL - 2023-12-16 19:25:49 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\FlightController.php(20): CodeIgniter\Model->__call('getFlight', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->viewFlightPage()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RaySi\\TST\\onlyflights\\public\\index.php')
+CRITICAL - 2023-12-16 19:25:50 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\FlightController.php(20): CodeIgniter\Model->__call('getFlight', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->viewFlightPage()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RaySi\\TST\\onlyflights\\public\\index.php')
+CRITICAL - 2023-12-16 19:27:06 --> Undefined variable $flight
+in APPPATH\Views\view_flight.php on line 20.
+ 1 APPPATH\Views\view_flight.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flight', 'C:\\Users\\RaySi\\TST\\onlyflights\\app\\Views\\view_flight.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RaySi\\TST\\onlyflights\\app\\Views\\view_flight.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('view_flight', [], true)
+ 5 APPPATH\Controllers\FlightController.php(21): view('view_flight', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->viewFlightPage()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RaySi\\TST\\onlyflights\\public\\index.php')
+CRITICAL - 2023-12-16 19:27:07 --> Undefined variable $flight
+in APPPATH\Views\view_flight.php on line 20.
+ 1 APPPATH\Views\view_flight.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flight', 'C:\\Users\\RaySi\\TST\\onlyflights\\app\\Views\\view_flight.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RaySi\\TST\\onlyflights\\app\\Views\\view_flight.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('view_flight', [], true)
+ 5 APPPATH\Controllers\FlightController.php(21): view('view_flight', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->viewFlightPage()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RaySi\\TST\\onlyflights\\public\\index.php')

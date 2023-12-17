@@ -12,7 +12,7 @@ class AirportController extends ResourceController
         $model = model(Airport::class);
         $countryModel = model(Countries::class);
         $countries = $countryModel->getCountries();
-        return view('add_airport', ['countries' => $countries]);
+        return view('navbar').view('add_airport', ['countries' => $countries]);
     }
 
     public function add()
@@ -39,5 +39,12 @@ class AirportController extends ResourceController
         }
         
         return $this->respond($data);
+    }
+
+    public function viewAirportPage()
+    {
+        $model = model(Airport::class);
+        $airports = $model->getAirport();
+        return view('navbar').view('view_airport', ['airports' => $airports]);
     }
 }

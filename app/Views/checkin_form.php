@@ -2,39 +2,11 @@
 <html>
 <head>
     <title>Check In</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script>
-        window.onload = function() {
-            document.querySelector('form').addEventListener('submit', function(event) {
-                event.preventDefault();
-
-                var form = event.target;
-                var data = new FormData(form);
-
-                fetch(form.action, {
-                    method: 'POST',
-                    body: data
-                })
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(data) {
-                    if (data.success) {
-                        document.querySelector('.toast').innerHTML = data.message;
-                        document.querySelector('.toast').classList.add('show');
-                        setTimeout(function() {
-                            document.querySelector('.toast').classList.remove('show');
-                        }, 3000);
-                    }
-                });
-            });
-        }
-    </script>
 </head>
 <body>
     <div class="container">
         <h1>Check In</h1>
-        <form action="/checkin/checkin" method="post">
+        <form action="/checkin-result" method="get">
             <div class="form-group">
                 <label for="pnr">PNR</label>
                 <input type="text" class="form-control" id="pnr" name="pnr" placeholder="Enter PNR">

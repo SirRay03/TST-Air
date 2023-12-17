@@ -48,4 +48,22 @@ class BookingAPI extends ResourceController
         }
         return $this->respond($data);
     }
+
+    public function checkinForm()
+    {
+        return view('navbar').view('checkin_form');
+    }
+
+    public function checkinResult()
+    {
+        $model = model(Booking::class);
+        $pnr = $this->request->getVar('pnr');
+        $last_name = $this->request->getVar('last_name');
+        $result = $model->getCheckin($pnr, $last_name);
+        if ($result) {
+            return view('checkin_result', ['booking' => $result]);       
+        } else {
+            echo "No booking information available.";           
+        }
+    }
 }
