@@ -73,7 +73,7 @@
     </button>
     <div class="dropdown-content">
       <a href="/flight">View and Manage Registered Flights</a>
-      <a href="/add-flight">Add New Flight</a>
+      <a href="/flight/add-flight">Add New Flight</a>
     </div>
   </div> 
   <div class="dropdown">
@@ -82,10 +82,10 @@
     </button>
     <div class="dropdown-content">
       <a href="/airport">View and Manage Partner Airports</a>
-      <a href="/add-airport">Add New Partner Aiport</a>
+      <a href="/airport/addnew">Add New Partner Aiport</a>
     </div>
   </div>
-  <a href="/checkin">Passenger Check-In</a>
+  <a href="/booking/checkin">Passenger Check-In</a>
 </div>
 
 </body>

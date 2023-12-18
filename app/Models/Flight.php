@@ -32,7 +32,34 @@ class Flight extends Model{
     {
         $db = \Config\Database::connect();
 
-        $query = $db->query('INSERT INTO flight (flight_id, origin_id, destination_id, schedule, capacity, duration, price) VALUES (?, ?, ?, ?, ?, ?, ?)', [$flight_id, $origin_id, $destination_id, $schedule, $capacity, $duration, $price]);
+        $query = $db->query('INSERT INTO flight (id, origin_id, destination_id, schedule, capacity, duration, price) VALUES (?, ?, ?, ?, ?, ?, ?)', [$flight_id, $origin_id, $destination_id, $schedule, $capacity, $duration, $price]);
+
+        return $query;
+    }
+
+    public function getFlight($id)
+    {
+        $db = \Config\Database::connect();
+
+        $query = $db->query('SELECT * FROM flight WHERE id = ?', [$id]);
+
+        return $query->getRow();
+    }
+
+    public function editFlight($id, $origin_id, $destination_id, $schedule, $capacity, $duration, $price)
+    {
+        $db = \Config\Database::connect();
+
+        $query = $db->query('UPDATE flight SET origin_id = ?, destination_id = ?, schedule = ?, capacity = ?, duration = ?, price = ? WHERE id = ?', [$origin_id, $destination_id, $schedule, $capacity, $duration, $price, $id]);
+
+        return $query;
+    }
+
+    public function deleteFlight($id)
+    {
+        $db = \Config\Database::connect();
+
+        $query = $db->query('DELETE FROM flight WHERE id = ?', [$id]);
 
         return $query;
     }

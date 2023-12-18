@@ -75,33 +75,33 @@
 </head>
 <body>
     <h1>Add Flight</h1>
-    <form action="/flight/add-flight" method="POST">
+    <form action="/flight/add" method="POST">
         <label for="flight_number">Flight Number OF-...</label>
         <input type="text" name="flight_number" id="flight_number" required>
-        <label for="departure_airport">Departure Airport</label>
-        <select name="departure_airport" id="departure_airport" required>
+        <label for="origin_id">Departure Airport</label>
+        <select name="origin_id" id="origin_id" required>
             <option value="">Select an airport</option>
             <?php foreach ($airports as $airport) : ?>
                 <option value="<?= $airport->iata ?>"><?= $airport->iata ?></option>
             <?php endforeach ?>
         </select>
-        <label for="arrival_airport">Arrival Airport</label>
-        <select name="arrival_airport" id="arrival_airport" required>
+        <label for="destination_id">Arrival Airport</label>
+        <select name="destination_id" id="destination_id" required>
             <option value="">Select an airport</option>
             <?php foreach ($airports as $airport) : ?>
                 <option value="<?= $airport->iata ?>"><?= $airport->iata ?></option>
             <?php endforeach ?>
         </select>
-        <label for="departure_time">Departure Time</label>
-        <input type="datetime-local" name="departure_time" id="departure_time" required>
+        <label for="schedule">Departure Time</label>
+        <input type="datetime-local" name="schedule" id="schedule" required>
         <label for="duration">Duration</label>
-        <input type="number" name="duration" id="duration" required>
+        <input type="time" name="duration" id="duration" required>
         <label for="price">Price</label>
         <input type="number" name="price" id="price" required>
         <label for="capacity">Capacity</label>
         <input type="number" name="capacity" id="capacity" required>
         <input type="submit" value="Add Flight">
     </form>
-    <a href="/flight">Back to Flight List</a>
     <div class="toast"></div>
+</body>
 </html>

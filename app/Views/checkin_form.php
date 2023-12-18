@@ -6,7 +6,7 @@
 <body>
     <div class="container">
         <h1>Check In</h1>
-        <form action="/checkin-result" method="get">
+        <form action="/booking/checkin-result" method="get">
             <div class="form-group">
                 <label for="pnr">PNR</label>
                 <input type="text" class="form-control" id="pnr" name="pnr" placeholder="Enter PNR">

@@ -67,7 +67,7 @@
 
             // Use AJAX to fetch the airport details
             $.ajax({
-                url: '/fetch-airport/' + iata,  // Adjust the URL as needed
+                url: 'airport/fetch-airport/' + iata,  // Adjust the URL as needed
                 method: 'GET',
                 success: function(response) {
                     // Assuming the response is a JSON object containing the airport details
@@ -91,7 +91,7 @@
 
             // Use AJAX to submit the form data
             $.ajax({
-                url: '/edit-airport/' +$('#edit-iata').val(),  // Adjust the URL as needed
+                url: 'airport/edit-airport/' +$('#edit-iata').val(),  // Adjust the URL as needed
                 method: 'POST',
                 data: formData,
                 success: function(response) {
@@ -119,7 +119,7 @@
 
             // Use AJAX to submit the form data
             $.ajax({
-                url: '/delete-airport/' + $('#delete-iata').val(),  // Adjust the URL as needed
+                url: 'airport/delete-airport/' + $('#delete-iata').val(),  // Adjust the URL as needed
                 method: 'POST',
                 data: formData,
                 success: function(response) {

@@ -6,18 +6,33 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-$routes->get('/airport/add-airport', 'AirportController::addAirportPage');
 $routes->get('/', 'Home::index');
-$routes->get('/flights', 'FlightAPI::flights');
-$routes->post('booking/create', 'BookingAPI::create');
-$routes->post('booking/pay/(:any)', 'BookingAPI::pay/$1');
-$routes->get('/add-airport', 'AirportController::addAirportPage');
-$routes->post('/airport/add', 'AirportController::add');
-$routes->get('/add-flight', 'FlightController::addFlightPage');
-$routes->get('/flight', 'FlightController::viewFlightPage');
-$routes->get('checkin', 'BookingAPI::checkinForm');
-$routes->get('/checkin-result', 'BookingAPI::checkinResult');
-$routes->get('/airport', 'AirportController::viewAirportPage');
-$routes->get('/fetch-airport/(:any)', 'AirportController::fetchAirport/$1');
-$routes->post('edit-airport/(:any)', 'AirportController::editAirport/$1');
-$routes->post('delete-airport/(:any)', 'AirportController::deleteAirport/$1');
+
+// Booking Route Group
+$routes->group('booking', ['namespace' => 'App\Controllers'], function($routes) {
+    $routes->post('create', 'BookingAPI::create');
+    $routes->post('pay/(:any)', 'BookingAPI::pay/$1');
+    $routes->get('checkin', 'BookingAPI::checkinForm');
+    $routes->get('checkin-result', 'BookingAPI::checkinResult');
+});
+
+//  Airport Route Group
+$routes->group('airport', ['namespace' => 'App\Controllers'], function($routes) {
+    $routes->get('addnew', 'AirportController::addAirportPage');
+    $routes->post('add', 'AirportController::add');
+    $routes->get('', 'AirportController::viewAirportPage');
+    $routes->get('fetch-airport/(:any)', 'AirportController::fetchAirport/$1');
+    $routes->post('edit-airport/(:any)', 'AirportController::editAirport/$1');
+    $routes->post('delete-airport/(:any)', 'AirportController::deleteAirport/$1');
+});
+
+// Flight Route Group
+$routes->group('flight', ['namespace' => 'App\Controllers'], function($routes) {
+    $routes->get('get', 'FlightAPI::flights');
+    $routes->get('add-flight', 'FlightController::addFlightPage');
+    $routes->post('add', 'FlightController::add');
+    $routes->get('', 'FlightController::viewFlightPage');
+    $routes->get('fetch-flight/(:any)', 'FlightController::fetchFlight/$1');
+    $routes->post('edit-flight/(:any)', 'FlightController::editFlight/$1');
+    $routes->post('delete-flight/(:any)', 'FlightController::deleteFlight/$1');
+});
