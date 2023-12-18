@@ -314,3 +314,148 @@ in SYSTEMPATH\Database\BaseConnection.php on line 647.
  5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-18 08:24:58 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'onlyflights', 3306, '', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Airport.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\AirportController.php(47): App\Models\Airport->getAirport()
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\AirportController->viewAirportPage()
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AirportController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Airport.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\AirportController.php(47): App\Models\Airport->getAirport()
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\AirportController->viewAirportPage()
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AirportController))
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#9 {main}
+CRITICAL - 2023-12-18 08:24:58 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Airport.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM airport')
+ 3 APPPATH\Controllers\AirportController.php(47): App\Models\Airport->getAirport()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AirportController->viewAirportPage()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AirportController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-18 08:30:12 --> mysqli_sql_exception: Duplicate entry 'ASDFGH' for key 'PRIMARY' in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO boo...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO boo...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO boo...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Booking.php(10): CodeIgniter\Database\BaseConnection->query('INSERT INTO boo...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\BookingAPI.php(16): App\Models\Booking->createBooking('OF-999', 'ASDFGH')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-18 08:30:12 --> Duplicate entry 'ASDFGH' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Booking.php(10): CodeIgniter\Database\BaseConnection->query('INSERT INTO booking (flight_id, pnr) VALUES (?, ?)', [...])
+ 2 APPPATH\Controllers\BookingAPI.php(16): App\Models\Booking->createBooking('OF-999', 'ASDFGH')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-18 08:30:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO boo...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO boo...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO boo...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Booking.php(10): CodeIgniter\Database\BaseConnection->query('INSERT INTO boo...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\BookingAPI.php(16): App\Models\Booking->createBooking('OF-999', '123456')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-18 08:30:24 --> Cannot add or update a child row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Booking.php(10): CodeIgniter\Database\BaseConnection->query('INSERT INTO booking (flight_id, pnr) VALUES (?, ?)', [...])
+ 2 APPPATH\Controllers\BookingAPI.php(16): App\Models\Booking->createBooking('OF-999', '123456')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 12:24:19 --> Invalid file: "search_flight.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('search_flight.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('search_flight', [], true)
+ 3 APPPATH\Controllers\FlightController.php(61): view('search_flight', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->searchFlightPage()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 12:24:54 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\FlightController.php(67): CodeIgniter\Model->__call('searchFlight', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->search()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 12:26:19 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\FlightController.php(67): CodeIgniter\Model->__call('searchFlight', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->search()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 12:27:03 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\search_result.php on line 47.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('search_result', [], true)
+ 3 APPPATH\Controllers\FlightController.php(68): view('search_result', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->search()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 12:27:34 --> Undefined property: stdClass::$flight_number
+in APPPATH\Views\search_result.php on line 30.
+ 1 APPPATH\Views\search_result.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$flight_number', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\search_result.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\search_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('search_result', [], true)
+ 5 APPPATH\Controllers\FlightController.php(68): view('search_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->search()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 12:27:56 --> Undefined property: stdClass::$booked
+in APPPATH\Views\search_result.php on line 37.
+ 1 APPPATH\Views\search_result.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$booked', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\search_result.php', 37)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\search_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('search_result', [], true)
+ 5 APPPATH\Controllers\FlightController.php(68): view('search_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->search()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')

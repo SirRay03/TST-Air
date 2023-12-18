@@ -28,11 +28,13 @@ $routes->group('airport', ['namespace' => 'App\Controllers'], function($routes) 
 
 // Flight Route Group
 $routes->group('flight', ['namespace' => 'App\Controllers'], function($routes) {
-    $routes->get('get', 'FlightAPI::flights');
+    $routes->get('get', 'FlightAPI::getFlight');
     $routes->get('add-flight', 'FlightController::addFlightPage');
     $routes->post('add', 'FlightController::add');
     $routes->get('', 'FlightController::viewFlightPage');
     $routes->get('fetch-flight/(:any)', 'FlightController::fetchFlight/$1');
     $routes->post('edit-flight/(:any)', 'FlightController::editFlight/$1');
     $routes->post('delete-flight/(:any)', 'FlightController::deleteFlight/$1');
+    $routes->get('search', 'FlightController::searchFlightPage');
+    $routes->get('search-result', 'FlightController::search');
 });

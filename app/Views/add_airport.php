@@ -3,6 +3,45 @@
 <head>
     <title>Add Airport</title>
     <style>
+        /* Add some style to the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://wallpaperaccess.com/full/1307429.jpg"); /* Use a background image of a plane */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000000; /* Add some shadow to the title */
+        }
+        form {
+            max-width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Use a semi-transparent background for the form */
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555555;
+        }
         .toast {
             visibility: hidden;
             max-width: 50%;
@@ -84,7 +123,8 @@
         <label for="city">City</label>
         <input type="text" name="city" id="city" required><br>
         <label for="country">Country</label>
-        <select name="country" id="country">
+        <select name="country" id="country" required>
+            <option value="">Select a country</option>
             <?php foreach ($countries as $country) : ?>
                 <option value="<?= $country->code ?>"><?= $country->name ?></option>
             <?php endforeach; ?>

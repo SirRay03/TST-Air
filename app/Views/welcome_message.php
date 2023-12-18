@@ -3,11 +3,14 @@
 <head>
     <title>Airline Landing Page</title>
     <style>
+        /* Add some style to the page */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-image: url("https://wallpaperset.com/w/full/c/7/c/249456.jpg"); /* Use a background image of a plane */
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .header {
             background-color: #333;
@@ -27,17 +30,50 @@
             bottom: 0;
             width: 100%;
         }
+        /* Add some style for the buttons */
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+        /* Add some style for the images */
+        .image {
+            display: block;
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Welcome to Our Airline</h1>
+        <!-- Add the buttons for the services -->
+        <a href="/flight" class="button">View Flights</a>
+        <a href="/airport" class="button">View Airports</a>
+        <a href="/flight/add-flight" class="button">Add Flight</a>
+        <a href="/airport/add-airport" class="button">Add Airport</a>
+        <a href="/booking/checkin" class="button">Passenger Check-In</a>
     </div>
     <div class="main">
         <h2>About Us</h2>
         <p>We are committed to providing the best travel experience for all our customers.</p>
         <h2>Our Services</h2>
         <p>We offer flights to numerous destinations around the world. Book your flight today!</p>
+        <!-- Add an image of a world map with flight routes -->
+        <img src="https://www.visualcapitalist.com/wp-content/uploads/2022/09/CP-Adam-Symington-Mapping-Airways-Main.png" alt="World Map with Flight Routes" class="image">
     </div>
     <div class="footer">
         <p>© 2023 Our Airline. All rights reserved.</p>

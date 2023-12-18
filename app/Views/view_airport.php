@@ -5,6 +5,81 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <style>
+        /* Add some style to the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333333;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #eeeeee;
+        }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        a {
+            color: #333333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #555555;
+            text-decoration: underline;
+        }
+        .modal {
+            background-color: #ffffff;
+            border: 2px solid #333333;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .modal p {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .modal label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .modal input, .modal select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .modal input[type="submit"] {
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .modal input[type="submit"]:hover {
+            background-color: #555555;
+        }
+        /* Add some icons to the edit and delete links */
+        .edit-link::before {
+            content: "\270E"; /* Unicode character for edit icon */
+            margin-right: 5px;
+        }
+        .delete-link::before {
+            content: "\2716"; /* Unicode character for delete icon */
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>Airport Details</h1>

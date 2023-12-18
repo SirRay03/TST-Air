@@ -22,9 +22,7 @@ class Flight extends Model{
     public function getAllFlights()
     {
         $db = \Config\Database::connect();
-
         $query = $db->query('SELECT * FROM flight');
-
         return $query->getResult();
     }
 
