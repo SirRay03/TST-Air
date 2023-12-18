@@ -459,3 +459,39 @@ in APPPATH\Views\search_result.php on line 37.
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 16:28:36 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 16:28:53 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 16:29:37 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-18 16:30:11 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')

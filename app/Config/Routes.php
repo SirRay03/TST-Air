@@ -18,6 +18,7 @@ $routes->group('booking', ['namespace' => 'App\Controllers'], function($routes) 
 
 //  Airport Route Group
 $routes->group('airport', ['namespace' => 'App\Controllers'], function($routes) {
+    $routes->get('get-all', 'AirportAPI::getAllAirport');
     $routes->get('addnew', 'AirportController::addAirportPage');
     $routes->post('add', 'AirportController::add');
     $routes->get('', 'AirportController::viewAirportPage');
@@ -29,6 +30,7 @@ $routes->group('airport', ['namespace' => 'App\Controllers'], function($routes) 
 // Flight Route Group
 $routes->group('flight', ['namespace' => 'App\Controllers'], function($routes) {
     $routes->get('get', 'FlightAPI::getFlight');
+    $routes->get('get-all', 'FlightAPI::getAllFlights');
     $routes->get('add-flight', 'FlightController::addFlightPage');
     $routes->post('add', 'FlightController::add');
     $routes->get('', 'FlightController::viewFlightPage');
