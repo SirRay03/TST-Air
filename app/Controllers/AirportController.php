@@ -43,8 +43,37 @@ class AirportController extends ResourceController
 
     public function viewAirportPage()
     {
+        $airportModel = model(Airport::class);
+        $airports = $airportModel->getAirport();
+
+        $countryModel = model(Countries::class);
+        $countries = $countryModel->getCountries();
+
+        return view('navbar').view('view_airport', ['airports' => $airports, 'countries' => $countries]);
+    }
+
+
+    public function fetchAirport($iata)
+    {
         $model = model(Airport::class);
-        $airports = $model->getAirport();
-        return view('navbar').view('view_airport', ['airports' => $airports]);
+        $airport = $model->getSpecificAirport($iata);
+        return $this->respond($airport);
+    }
+
+    public function editAirport($iata)
+    {
+        $airportModel = model(Airport::class);
+
+        $country_id = $this->request->getVar('country_id');
+        $name = $this->request->getVar('name');
+        $city = $this->request->getVar('city');
+
+        $airportModel->editAirport($iata, $name, $city, $country_id);
+    }
+
+    public function deleteAirport($iata)
+    {
+        $airportModel = model(Airport::class);
+        $airportModel->deleteAirport($iata);
     }
 }

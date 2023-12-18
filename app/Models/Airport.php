@@ -17,17 +17,24 @@ class Airport extends Model{
         return $query->getResult();
     }
 
-    public function editAirport($iata, $name, $city, $country, $id)
+    public function getSpecificAirport($iata)
     {
         $db = \Config\Database::connect();
-        $query = $db->query('UPDATE airport SET iata = ?, name = ?, city = ?, country_id = ? WHERE airport_id = ?', [$iata, $name, $city, $country, $id]);
+        $query = $db->query('SELECT * FROM airport WHERE iata = ?', [$iata]);
+        return $query->getResult();
+    }
+
+    public function editAirport($iata, $name, $city, $country)
+    {
+        $db = \Config\Database::connect();
+        $query = $db->query('UPDATE airport SET name = ?, city = ?, country_id = ? WHERE iata = ?', [$name, $city, $country, $iata]);
         return $query;
     }
 
-    public function deleteAirport($id)
+    public function deleteAirport($iata)
     {
         $db = \Config\Database::connect();
-        $query = $db->query('DELETE FROM airport WHERE airport_id = ?', [$id]);
+        $query = $db->query('DELETE FROM airport WHERE iata = ?', [$iata]);
         return $query;
     }
 }

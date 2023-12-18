@@ -18,3 +18,6 @@ $routes->get('/flight', 'FlightController::viewFlightPage');
 $routes->get('checkin', 'BookingAPI::checkinForm');
 $routes->get('/checkin-result', 'BookingAPI::checkinResult');
 $routes->get('/airport', 'AirportController::viewAirportPage');
+$routes->get('/fetch-airport/(:any)', 'AirportController::fetchAirport/$1');
+$routes->post('edit-airport/(:any)', 'AirportController::editAirport/$1');
+$routes->post('delete-airport/(:any)', 'AirportController::deleteAirport/$1');
