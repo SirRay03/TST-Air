@@ -96,9 +96,10 @@ class BookingAPI extends ResourceController
         $response = $this->getData('localhost:3000/pnrAPI', $getData);
         $response = json_decode($response);
         $message = $response->message;
-        $pnr = $response->data[0]->id;
-        $fid = $response->data[0]->flight_id;
-        if ($message === 'success') {
+        $status = $response->status[0]->status;
+        if ($message === 'success' && $status === 'Success') {    
+            $pnr = $response->data[0]->id;
+            $fid = $response->data[0]->flight_id;
             $result = $model->getCheckin($pnr);
             $flight_result = $flightModel->getFlight($fid);
             // print_r($flight_result->origin_id);
@@ -118,7 +119,7 @@ class BookingAPI extends ResourceController
             ];
             return view('checkin_result', ['checkin_result' => $checkin_result]);
         } else {
-            print_r('error');
+            return view('checkin_result', ['checkin_result' => null]);
         }   
     }
 }

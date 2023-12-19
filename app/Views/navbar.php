@@ -82,7 +82,7 @@
     </button>
     <div class="dropdown-content">
       <a href="/airport">View and Manage Partner Airports</a>
-      <a href="/airport/addnew">Add New Partner Aiport</a>
+      <a href="/airport/add-airport">Add New Partner Aiport</a>
     </div>
   </div>
   <a href="/booking/checkin">Passenger Check-In</a>

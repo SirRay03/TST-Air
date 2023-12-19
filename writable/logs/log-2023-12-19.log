@@ -1423,3 +1423,11 @@ in APPPATH\Views\checkin_result.php on line 35.
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:19:36 --> Undefined property: stdClass::$data
+in APPPATH\Controllers\BookingAPI.php on line 99.
+ 1 APPPATH\Controllers\BookingAPI.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$data', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
