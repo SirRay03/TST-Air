@@ -69,21 +69,23 @@ Sistem penerbangan yang kami kembangkan merupakan sistem yang menyediakan jadwal
 
 4. Download & install XAMPP [Link](https://www.apachefriends.org/)
 
-5. Setup aplikasi menggunakan command berikut
+5. Masukkan database onlyflight untuk database onlyflights dan database ticketing untuk sistem TST-Ticketing
+
+6. Setup aplikasi menggunakan command berikut
 
 ```
 composer install
 composer update
 ```
 
-5. Jalankan aplikasi menggunakan command berikut pada terminal setiap jendela
+7. Jalankan aplikasi menggunakan command berikut pada terminal setiap jendela
 
 OnlyFlights ```php spark serve --port 8080```
 TST-Ticket  ```php spark serve --port 3000```
 
-6. Service TST-Ticket berjalan pada http://localhost:3000 dan OnlyFlights berjalan pada http://localhost:8080
+8. Service TST-Ticket berjalan pada http://localhost:3000 dan OnlyFlights berjalan pada http://localhost:8080
 
-7. Berikut informasi akun yang dapat digunakan untuk login
+9. Berikut informasi akun yang dapat digunakan untuk login
 ```
 # Login TST-Ticket
 username: ilmagita
