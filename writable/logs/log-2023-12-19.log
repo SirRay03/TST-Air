@@ -206,3 +206,163 @@ INFO - 2023-12-19 05:24:06 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-19 05:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-19 05:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-19 05:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 06:50:17 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'onlyflights', 3306, '', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Login.php(8): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\LoginController.php(15): App\Models\Login->loginProcess('admin@onlyfligh...', '482c811da5d5b4b...')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\LoginController->loginProcess()
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Login.php(8): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...', Array)
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\LoginController.php(15): App\Models\Login->loginProcess('admin@onlyfligh...', '482c811da5d5b4b...')
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\LoginController->loginProcess()
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#9 {main}
+CRITICAL - 2023-12-19 06:50:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Login.php(8): CodeIgniter\Database\BaseConnection->query('SELECT * FROM employee WHERE email=? AND password=?', [...])
+ 3 APPPATH\Controllers\LoginController.php(15): App\Models\Login->loginProcess('admin@onlyflights.18s', '482c811da5d5b4bc6d497ffa98491e38')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->loginProcess()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 06:50:21 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'onlyflights', 3306, '', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Login.php(8): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\LoginController.php(15): App\Models\Login->loginProcess('admin@onlyfligh...', '482c811da5d5b4b...')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\LoginController->loginProcess()
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Login.php(8): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...', Array)
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\LoginController.php(15): App\Models\Login->loginProcess('admin@onlyfligh...', '482c811da5d5b4b...')
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\LoginController->loginProcess()
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#9 {main}
+CRITICAL - 2023-12-19 06:50:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Login.php(8): CodeIgniter\Database\BaseConnection->query('SELECT * FROM employee WHERE email=? AND password=?', [...])
+ 3 APPPATH\Controllers\LoginController.php(15): App\Models\Login->loginProcess('admin@onlyflights.18s', '482c811da5d5b4bc6d497ffa98491e38')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->loginProcess()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 06:50:25 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'onlyflights', 3306, '', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Login.php(8): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\LoginController.php(15): App\Models\Login->loginProcess('admin@onlyfligh...', '482c811da5d5b4b...')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\LoginController->loginProcess()
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Login.php(8): CodeIgniter\Database\BaseConnection->query('SELECT * FROM e...', Array)
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\LoginController.php(15): App\Models\Login->loginProcess('admin@onlyfligh...', '482c811da5d5b4b...')
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\LoginController->loginProcess()
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#9 {main}
+CRITICAL - 2023-12-19 06:50:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Login.php(8): CodeIgniter\Database\BaseConnection->query('SELECT * FROM employee WHERE email=? AND password=?', [...])
+ 3 APPPATH\Controllers\LoginController.php(15): App\Models\Login->loginProcess('admin@onlyflights.18s', '482c811da5d5b4bc6d497ffa98491e38')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->loginProcess()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+INFO - 2023-12-19 06:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 06:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 07:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

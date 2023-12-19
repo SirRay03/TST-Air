@@ -20,6 +20,8 @@
         }
         .main {
             margin: 15px;
+            color: #000000; /* This will make the text color white */
+            text-align: center;
         }
         .footer {
             background-color: #333;
@@ -55,11 +57,18 @@
             border: 2px solid #ffffff;
             border-radius: 10px;
         }
+        .logo {
+            display: block;
+            width: auto;
+            height: 200px; /* This will make the logo 100 pixels high */
+            margin: 0 auto;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to Our Airline</h1>
         <!-- if no session found, show different menu -->
         <?php if (!session()->get('log')): ?>
             <a href="/login" class="button">Login</a>
@@ -70,11 +79,13 @@
             <a href="/airport" class="button">View Airports</a>
             <a href="/flight/add-flight" class="button">Add Flight</a>
             <a href="/airport/add-airport" class="button">Add Airport</a>
-            <a href="/booking/checkin" class="button">Passenger Check-In</a>
+            <a href="/financial-recap" class="button">Financial Recap</a>
             <a href="/logout" class="button">Logout</a>
         <?php endif; ?>
     </div>
     <div class="main">
+        <img src="https://i.imgur.com/71peiTl.jpeg" alt="OF logo" class="logo">
+        <h1>Welcome to OnlyFlights!</h1>
         <h2>About Us</h2>
         <p>We are committed to providing the best travel experience for all our customers.</p>
         <h2>Our Services</h2>
@@ -83,7 +94,7 @@
         <img src="https://www.visualcapitalist.com/wp-content/uploads/2022/09/CP-Adam-Symington-Mapping-Airways-Main.png" alt="World Map with Flight Routes" class="image">
     </div>
     <div class="footer">
-        <p>© 2023 Our Airline. All rights reserved.</p>
+        <p>© 2023 OnlyFlights. All rights reserved.</p>
     </div>
 </body>
 </html>

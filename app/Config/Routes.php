@@ -37,6 +37,7 @@ $routes->group('flight', ['namespace' => 'App\Controllers'], function($routes) {
     $routes->get('fetch-flight/(:any)', 'FlightController::fetchFlight/$1');
     $routes->post('edit-flight/(:any)', 'FlightController::editFlight/$1');
     $routes->post('delete-flight/(:any)', 'FlightController::deleteFlight/$1');
+    $routes->get('get-per-id/(:any)', 'FlightAPI::getByID/$1');
 });
 
 // Login

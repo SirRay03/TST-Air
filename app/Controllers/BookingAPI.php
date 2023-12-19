@@ -63,7 +63,7 @@ class BookingAPI extends ResourceController
 
     public function checkinForm()
     {
-        return view('navbar').view('checkin_form');
+        return view('checkin_form');
     }
 
     public function checkinResult()

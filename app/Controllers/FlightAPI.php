@@ -47,4 +47,21 @@ class FlightAPI extends ResourceController
         }
         return $this->respond($data);
     }
+
+    public function getByID($id){
+        $model = model(Flight::class);
+        $result = $model->getFlight($id);
+        if ($result) {
+            $data = [
+                'message' => 'success',
+                'flight' => $result
+            ];
+        } else {
+            $data = [
+                'message' => 'failed',
+                'flight' => []
+            ];
+        }
+        return $this->respond($data);
+    }
 }

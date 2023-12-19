@@ -51,19 +51,28 @@
             background-color: #cce5ff;
             color: #004085;
         }
+        .logo {
+            display: block;
+            width: auto;
+            height: 25%;
+            margin: 0 auto;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Check In</h1>
+        <img src="https://i.imgur.com/71peiTl.jpeg" alt="OF logo" class="logo">
+        <h1>Web Checkin</h1>
         <form action="/booking/checkin-result" method="get">
             <div class="form-group">
-                <label for="pnr">PNR</label>
-                <input type="text" class="form-control" id="pnr" name="pnr" placeholder="Enter PNR">
+                <label for="booking_id">Booking ID</label>
+                <input type="text" class="form-control" id="booking_id" name="booking_id" placeholder="Enter Booking ID">
             </div>
             <div class="form-group">
                 <label for="last_name">Last Name</label>
-                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter Last Name">
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter Passenger Last Name">
             </div>
             <button type="submit" class="btn btn-primary">Check In</button>
         </form>

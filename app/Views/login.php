@@ -58,7 +58,7 @@
     </head>
     <body>
         <!-- Add the logo of the airline -->
-        <img src="https://i.imgur.com/SZHhwwp.jpeg" alt="OF logo" class="logo">
+        <img src="https://i.imgur.com/71peiTl.jpeg" alt="OF logo" class="logo">
         <h1>Login</h1>
         <form action="/login-process" method="POST">
             <label for="email">Email</label>
