@@ -31,14 +31,15 @@
 </head>
 <body>
     <h1>Check-in Result</h1>
-    <?php if(isset($booking)): ?>
+    <?php if(isset($checkin_result)): ?>
         <ul>
-            <li><strong>PNR:</strong> <?php echo $booking->pnr; ?></li>
-            <li><strong>Last Name:</strong> <?php echo $booking->last_name; ?></li>
-            <li><strong>Flight ID:</strong> <?php echo $booking->flight_id; ?></li>
-            <li><strong>Created At:</strong> <?php echo $booking->created_at; ?></li>
-            <li><strong>Paid At:</strong> <?php echo $booking->paid_at; ?></li>
-            <li><strong>Seat Number:</strong> <?php echo $booking->seat_num; ?></li>
+            <li><strong>Booking ID:</strong> <?php echo $checkin_result['booking_id']; ?></li>
+            <li><strong>Passenger Name:</strong> <?php echo $checkin_result['honorifics'] . ' ' . $checkin_result['first_name'] . ' ' . $checkin_result['last_name']; ?></li>
+            <li><strong>Flight ID:</strong> <?php echo $checkin_result['flight_id']; ?></li>
+            <li><strong>Departure Airport:</strong> <?php echo $checkin_result['departure_airport']; ?></li>
+            <li><strong>Arrival Airport:</strong> <?php echo $checkin_result['arrival_airport']; ?></li>
+            <li><strong>Departure Date:</strong> <?php echo $checkin_result['departure_date']; ?></li>
+            <li><strong>Seat Number:</strong> <?php echo $checkin_result['seat_num']; ?></li>
         </ul>
     <?php else: ?>
         <p>No booking information available.</p>

@@ -4,9 +4,27 @@ namespace App\Controllers;
 use CodeIgniter\RESTful\ResourceController;
 use App\Models\Booking;
 use App\Models\BookingAuth;
+use App\Models\Flight;
+use App\Models\Airport;
 
 class BookingAPI extends ResourceController
 {
+    private function getData($url, $data = [])
+    {
+        $url = rtrim($url, '?'); // Remove trailing question mark if it exists
+        $url .= '?' . http_build_query($data);
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+        $output = curl_exec($ch);
+
+        curl_close($ch);
+
+        return $output;
+    }
+
     public function create($seg1=null, $seg2=null)
     {
         $model = model(Booking::class);
@@ -69,13 +87,38 @@ class BookingAPI extends ResourceController
     public function checkinResult()
     {
         $model = model(Booking::class);
-        $pnr = $this->request->getVar('pnr');
-        $last_name = $this->request->getVar('last_name');
-        $result = $model->getCheckin($pnr, $last_name);
-        if ($result) {
-            return view('checkin_result', ['booking' => $result]);       
+        $flightModel = model(Flight::class);
+        $airportModel = model(Airport::class);
+        $getData = [ 
+            'booking_id' => $this->request->getVar('booking_id'),
+            'last_name' => $this->request->getVar('last_name')
+        ];
+        $response = $this->getData('localhost:3000/pnrAPI', $getData);
+        $response = json_decode($response);
+        $message = $response->message;
+        $pnr = $response->data[0]->id;
+        $fid = $response->data[0]->flight_id;
+        if ($message === 'success') {
+            $result = $model->getCheckin($pnr);
+            $flight_result = $flightModel->getFlight($fid);
+            // print_r($flight_result->origin_id);
+            $origin = $airportModel->getSpecificAirport($flight_result->origin_id);
+            $destination = $airportModel->getSpecificAirport($flight_result->destination_id);
+            // Booking ID, Honorifics, First Name, Last Name, Flight ID, Departure Airport, Arrival Airport, Departure Date, Seat Number
+            $checkin_result = [
+                'booking_id' => $response->data[0]->booking_id,
+                'honorifics' => $response->data[0]->honorifics,
+                'first_name' => $response->data[0]->first_name,
+                'last_name' => $response->data[0]->last_name,
+                'flight_id' => $response->data[0]->flight_id,
+                'departure_airport' => $origin[0]->name,
+                'arrival_airport' => $destination[0]->name,
+                'departure_date' => $flight_result->schedule,
+                'seat_num' => $result->seat_num
+            ];
+            return view('checkin_result', ['checkin_result' => $checkin_result]);
         } else {
-            echo "No booking information available.";           
-        }
+            print_r('error');
+        }   
     }
 }

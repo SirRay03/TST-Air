@@ -366,3 +366,1060 @@ INFO - 2023-12-19 07:02:51 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-19 07:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-19 07:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-19 07:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 09:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 09:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 09:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 09:55:00 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:00 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:02 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:02 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:03 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:03 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:04 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:04 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:05 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:05 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:06 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:06 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:06 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:06 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:08 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:08 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:08 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:08 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:09 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:09 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+INFO - 2023-12-19 09:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-19 09:55:13 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:13 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-002')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-002')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:16 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-002')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-002')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+ERROR - 2023-12-19 09:55:39 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`)) in C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM fli...', 0)
+#1 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM fli...')
+#2 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM fli...')
+#3 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM fli...', Array)
+#4 C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+#5 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+#6 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+#7 C:\Users\RAYHAN\PinHanPan\TST-Air\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\RAYHAN\PinHanPan\TST-Air\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\RAYHAN\PinHanPan\TST-Air\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN...')
+#10 {main}
+CRITICAL - 2023-12-19 09:55:39 --> Cannot delete or update a parent row: a foreign key constraint fails (`onlyflights`.`booking`, CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`flight_id`) REFERENCES `flight` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Flight.php(69): CodeIgniter\Database\BaseConnection->query('DELETE FROM flight WHERE id = ?', [...])
+ 2 APPPATH\Controllers\FlightController.php(58): App\Models\Flight->deleteFlight('OF-001')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\FlightController->deleteFlight('OF-001')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+INFO - 2023-12-19 10:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 10:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 10:32:11 --> Undefined property: stdClass::$booking
+in APPPATH\Controllers\BookingAPI.php on line 95.
+ 1 APPPATH\Controllers\BookingAPI.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$booking', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:32:22 --> Undefined property: stdClass::$booking
+in APPPATH\Controllers\BookingAPI.php on line 95.
+ 1 APPPATH\Controllers\BookingAPI.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$booking', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:33:14 --> Attempt to read property "pnr" on array
+in APPPATH\Views\checkin_result.php on line 36.
+ 1 APPPATH\Views\checkin_result.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "pnr" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(97): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:34:06 --> Array to string conversion
+in APPPATH\Controllers\BookingAPI.php on line 97.
+ 1 APPPATH\Controllers\BookingAPI.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:36:11 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\BookingAPI.php on line 98.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:36:13 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\BookingAPI.php on line 98.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:36:19 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\BookingAPI.php on line 98.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:36:28 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\BookingAPI.php on line 98.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:36:57 --> Call to undefined function App\Controllers\vardump()
+in APPPATH\Controllers\BookingAPI.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:38:55 --> Call to undefined function App\Controllers\vardump()
+in APPPATH\Controllers\BookingAPI.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:39:10 --> Call to undefined function App\Controllers\vardump()
+in APPPATH\Controllers\BookingAPI.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:39:12 --> Call to undefined function App\Controllers\vardump()
+in APPPATH\Controllers\BookingAPI.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:39:37 --> Call to undefined function App\Controllers\vardump()
+in APPPATH\Controllers\BookingAPI.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:39:38 --> Call to undefined function App\Controllers\vardump()
+in APPPATH\Controllers\BookingAPI.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:40:09 --> Call to undefined function App\Controllers\vardump()
+in APPPATH\Controllers\BookingAPI.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:40:10 --> Call to undefined function App\Controllers\vardump()
+in APPPATH\Controllers\BookingAPI.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:40:44 --> Call to undefined function App\Controllers\vardump()
+in APPPATH\Controllers\BookingAPI.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:45:40 --> Attempt to read property "id" on array
+in APPPATH\Controllers\BookingAPI.php on line 103.
+ 1 APPPATH\Controllers\BookingAPI.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:45:41 --> Attempt to read property "id" on array
+in APPPATH\Controllers\BookingAPI.php on line 103.
+ 1 APPPATH\Controllers\BookingAPI.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:46:47 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\BookingAPI.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:46:48 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\BookingAPI.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:47:10 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\BookingAPI.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:47:11 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\BookingAPI.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:47:17 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\BookingAPI.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:47:46 --> Undefined variable $responseArray
+in APPPATH\Controllers\BookingAPI.php on line 103.
+ 1 APPPATH\Controllers\BookingAPI.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $responseArray', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:47:46 --> Undefined variable $responseArray
+in APPPATH\Controllers\BookingAPI.php on line 103.
+ 1 APPPATH\Controllers\BookingAPI.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $responseArray', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:50:44 --> syntax error, unexpected token "return", expecting "("
+in APPPATH\Models\Booking.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\Booking.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Booking')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Booking')
+ 4 SYSTEMPATH\Config\Factories.php(283): class_exists('App\\Models\\Booking')
+ 5 SYSTEMPATH\Config\Factories.php(202): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\Booking')
+ 6 SYSTEMPATH\Config\Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\Booking', [...])
+ 7 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\BookingAPI.php(87): model('App\\Models\\Booking')
+ 9 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:50:57 --> syntax error, unexpected token "return", expecting "("
+in APPPATH\Models\Booking.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\Booking.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Booking')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Booking')
+ 4 SYSTEMPATH\Config\Factories.php(283): class_exists('App\\Models\\Booking')
+ 5 SYSTEMPATH\Config\Factories.php(202): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\Booking')
+ 6 SYSTEMPATH\Config\Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\Booking', [...])
+ 7 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\BookingAPI.php(87): model('App\\Models\\Booking')
+ 9 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:50:57 --> syntax error, unexpected token "return", expecting "("
+in APPPATH\Models\Booking.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\Booking.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Booking')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Booking')
+ 4 SYSTEMPATH\Config\Factories.php(283): class_exists('App\\Models\\Booking')
+ 5 SYSTEMPATH\Config\Factories.php(202): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\Booking')
+ 6 SYSTEMPATH\Config\Factories.php(161): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\Booking', [...])
+ 7 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\BookingAPI.php(87): model('App\\Models\\Booking')
+ 9 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:51:15 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\BookingAPI.php on line 106
+in SYSTEMPATH\Common.php on line 1178.
+ 1 APPPATH\Controllers\BookingAPI.php(106): view('checkin_result', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:51:57 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\Users\RAYHAN\PinHanPan\TST-Air\app\Controllers\BookingAPI.php on line 106
+in SYSTEMPATH\Common.php on line 1178.
+ 1 APPPATH\Controllers\BookingAPI.php(106): view('checkin_result', null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:52:55 --> Undefined constant "App\Controllers\ok"
+in APPPATH\Controllers\BookingAPI.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:52:56 --> Undefined constant "App\Controllers\ok"
+in APPPATH\Controllers\BookingAPI.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:53:51 --> Undefined property: stdClass::$last_name
+in APPPATH\Views\checkin_result.php on line 37.
+ 1 APPPATH\Views\checkin_result.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$last_name', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 37)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(111): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 10:53:53 --> Undefined property: stdClass::$last_name
+in APPPATH\Views\checkin_result.php on line 37.
+ 1 APPPATH\Views\checkin_result.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$last_name', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 37)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(111): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:37 --> Undefined variable $flight_search
+in APPPATH\Controllers\BookingAPI.php on line 104.
+ 1 APPPATH\Controllers\BookingAPI.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flight_search', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 104)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:49 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:50 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:50 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:51 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:51 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:51 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:51 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:51 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:51 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:52 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:52 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:52 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:03:55 --> Undefined variable $flight_search
+in APPPATH\Controllers\BookingAPI.php on line 104.
+ 1 APPPATH\Controllers\BookingAPI.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flight_search', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 104)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:04:21 --> Undefined variable $flight_search
+in APPPATH\Controllers\BookingAPI.php on line 104.
+ 1 APPPATH\Controllers\BookingAPI.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flight_search', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 104)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:04:22 --> Undefined variable $flight_search
+in APPPATH\Controllers\BookingAPI.php on line 104.
+ 1 APPPATH\Controllers\BookingAPI.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $flight_search', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 104)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:04:47 --> Attempt to read property "name" on array
+in APPPATH\Controllers\BookingAPI.php on line 106.
+ 1 APPPATH\Controllers\BookingAPI.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:04:48 --> Attempt to read property "name" on array
+in APPPATH\Controllers\BookingAPI.php on line 106.
+ 1 APPPATH\Controllers\BookingAPI.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:05:35 --> Attempt to read property "name" on array
+in APPPATH\Controllers\BookingAPI.php on line 107.
+ 1 APPPATH\Controllers\BookingAPI.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:06:25 --> Attempt to read property "name" on array
+in APPPATH\Controllers\BookingAPI.php on line 107.
+ 1 APPPATH\Controllers\BookingAPI.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:06:41 --> Attempt to read property "name" on array
+in APPPATH\Controllers\BookingAPI.php on line 107.
+ 1 APPPATH\Controllers\BookingAPI.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:06:43 --> Attempt to read property "name" on array
+in APPPATH\Controllers\BookingAPI.php on line 107.
+ 1 APPPATH\Controllers\BookingAPI.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:08:29 --> Undefined property: stdClass::$booking_id
+in APPPATH\Controllers\BookingAPI.php on line 111.
+ 1 APPPATH\Controllers\BookingAPI.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$booking_id', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:08:41 --> Undefined property: stdClass::$booking_id
+in APPPATH\Controllers\BookingAPI.php on line 111.
+ 1 APPPATH\Controllers\BookingAPI.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$booking_id', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:08:49 --> Undefined property: stdClass::$booking_id
+in APPPATH\Controllers\BookingAPI.php on line 111.
+ 1 APPPATH\Controllers\BookingAPI.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$booking_id', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:08:50 --> Undefined property: stdClass::$booking_id
+in APPPATH\Controllers\BookingAPI.php on line 111.
+ 1 APPPATH\Controllers\BookingAPI.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$booking_id', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:09:55 --> Undefined property: stdClass::$departure_date
+in APPPATH\Controllers\BookingAPI.php on line 118.
+ 1 APPPATH\Controllers\BookingAPI.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$departure_date', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 118)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:10:05 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\BookingAPI.php on line 118.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:10:26 --> syntax error, unexpected variable "$checkin_result"
+in APPPATH\Controllers\BookingAPI.php on line 111.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:11:00 --> syntax error, unexpected single-quoted string "departure_date", expecting "]"
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BookingAPI')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BookingAPI')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\BookingAPI', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:11:10 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\BookingAPI.php on line 119.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:11:31 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\BookingAPI.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:11:32 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\BookingAPI.php on line 107.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:12:10 --> Attempt to read property "booking_id" on array
+in APPPATH\Views\checkin_result.php on line 36.
+ 1 APPPATH\Views\checkin_result.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "booking_id" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(119): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:12:47 --> Attempt to read property "data" on array
+in APPPATH\Views\checkin_result.php on line 36.
+ 1 APPPATH\Views\checkin_result.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "data" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(119): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:12:56 --> Attempt to read property "data" on array
+in APPPATH\Views\checkin_result.php on line 36.
+ 1 APPPATH\Views\checkin_result.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "data" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(119): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:12:57 --> Attempt to read property "data" on array
+in APPPATH\Views\checkin_result.php on line 36.
+ 1 APPPATH\Views\checkin_result.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "data" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(119): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:14:29 --> Attempt to read property "booking_id" on array
+in APPPATH\Views\checkin_result.php on line 35.
+ 1 APPPATH\Views\checkin_result.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "booking_id" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(119): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:14:36 --> Attempt to read property "data" on array
+in APPPATH\Views\checkin_result.php on line 35.
+ 1 APPPATH\Views\checkin_result.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "data" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(119): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:14:40 --> Attempt to read property "data" on array
+in APPPATH\Views\checkin_result.php on line 35.
+ 1 APPPATH\Views\checkin_result.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "data" on array', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Views\\checkin_result.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('checkin_result', [], true)
+ 5 APPPATH\Controllers\BookingAPI.php(119): view('checkin_result', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')

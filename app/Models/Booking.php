@@ -19,13 +19,15 @@ class Booking extends Model
         return $query;
     }
 
-    public function getCheckin($pnr, $last_name){
+    public function getCheckin($pnr){
         $db = \Config\Database::connect();
-        $query = $db->query('SELECT * FROM booking WHERE pnr = ? AND last_name = ?', [$pnr, $last_name]);
+        $query = $db->query('SELECT * FROM booking WHERE pnr = ?', [$pnr]);
         if ($query->getNumRows() > 0) {
             return $query->getRow();
         } else {
             return null;
         }
     }
+    
+
 }
