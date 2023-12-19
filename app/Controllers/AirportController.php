@@ -9,6 +9,9 @@ class AirportController extends ResourceController
 {
     public function addAirportPage()
     {
+        if (!session()->get('log')) {
+            return redirect()->to('/login');
+        }
         $model = model(Airport::class);
         $countryModel = model(Countries::class);
         $countries = $countryModel->getCountries();
@@ -43,6 +46,9 @@ class AirportController extends ResourceController
 
     public function viewAirportPage()
     {
+        if (!session()->get('log')) {
+            return redirect()->to('/login');
+        }
         $airportModel = model(Airport::class);
         $airports = $airportModel->getAirport();
 

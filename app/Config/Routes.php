@@ -10,8 +10,8 @@ $routes->get('/', 'Home::index');
 
 // Booking Route Group
 $routes->group('booking', ['namespace' => 'App\Controllers'], function($routes) {
-    $routes->post('create', 'BookingAPI::create');
-    $routes->post('pay/(:any)', 'BookingAPI::pay/$1');
+    $routes->post('create/(:any)/(:any)', 'BookingAPI::create/$1/$2');
+    $routes->post('pay/(:any)/(:any)/(:any)', 'BookingAPI::pay/$1/$2/$3');
     $routes->get('checkin', 'BookingAPI::checkinForm');
     $routes->get('checkin-result', 'BookingAPI::checkinResult');
 });
@@ -19,7 +19,7 @@ $routes->group('booking', ['namespace' => 'App\Controllers'], function($routes) 
 //  Airport Route Group
 $routes->group('airport', ['namespace' => 'App\Controllers'], function($routes) {
     $routes->get('get-all', 'AirportAPI::getAllAirport');
-    $routes->get('addnew', 'AirportController::addAirportPage');
+    $routes->get('add-airport', 'AirportController::addAirportPage');
     $routes->post('add', 'AirportController::add');
     $routes->get('', 'AirportController::viewAirportPage');
     $routes->get('fetch-airport/(:any)', 'AirportController::fetchAirport/$1');
@@ -37,6 +37,9 @@ $routes->group('flight', ['namespace' => 'App\Controllers'], function($routes) {
     $routes->get('fetch-flight/(:any)', 'FlightController::fetchFlight/$1');
     $routes->post('edit-flight/(:any)', 'FlightController::editFlight/$1');
     $routes->post('delete-flight/(:any)', 'FlightController::deleteFlight/$1');
-    $routes->get('search', 'FlightController::searchFlightPage');
-    $routes->get('search-result', 'FlightController::search');
 });
+
+// Login
+$routes->get('login', 'LoginController::index');
+$routes->post('login-process', 'LoginController::loginProcess');
+$routes->get('logout', 'LoginController::logout');

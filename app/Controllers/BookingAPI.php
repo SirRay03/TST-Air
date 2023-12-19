@@ -3,50 +3,62 @@
 namespace App\Controllers;
 use CodeIgniter\RESTful\ResourceController;
 use App\Models\Booking;
+use App\Models\BookingAuth;
 
 class BookingAPI extends ResourceController
 {
-    public function create()
+    public function create($seg1=null, $seg2=null)
     {
         $model = model(Booking::class);
-        
-        $flight_id = $this->request->getVar('flight_id');
-        $pnr = $this->request->getVar('pnr');
-
-        $result = $model->createBooking($flight_id, $pnr);
-        
-        if ($result) {
-            $data = [
-                'message' => 'success',
-                'booking' => $result
-            ];
+        $authModel = model(BookingAuth::class);
+        $checksum = $authModel->getDataAuthentication($seg1, $seg2);
+        if ($checksum == 0){
+            return("Invalid authentication!");
         } else {
-            $data = [
-                'message' => 'failed',
-                'booking' => []
-            ];
+            $flight_id = $this->request->getVar('flight_id');
+            $pnr = $this->request->getVar('pnr');
+
+            $result = $model->createBooking($flight_id, $pnr);
+            
+            if ($result) {
+                $data = [
+                    'message' => 'success',
+                    'booking' => $result
+                ];
+            } else {
+                $data = [
+                    'message' => 'failed',
+                    'booking' => []
+                ];
+            }
+            
+            return $this->respond($data);
         }
-        
-        return $this->respond($data);
     }
 
 
-    public function pay($pnr)
+    public function pay($pnr, $seg1=null, $seg2=null)
     {
         $model = model(Booking::class);
-        $result = $model->payBooking($pnr);
-        if ($result) {
-            $data = [
-                'message' => 'success',
-                'booking' => $result
-            ];
+        $authModel = model(BookingAuth::class);
+        $checksum = $authModel->getDataAuthentication($seg1, $seg2);
+        if ($checksum == 0){
+            return("Invalid authentication!");
         } else {
-            $data = [
-                'message' => 'failed',
-                'booking' => []
-            ];
+            $result = $model->payBooking($pnr);
+            if ($result) {
+                $data = [
+                    'message' => 'success',
+                    'booking' => $result
+                ];
+            } else {
+                $data = [
+                    'message' => 'failed',
+                    'booking' => []
+                ];
+            }
+            return $this->respond($data);
         }
-        return $this->respond($data);
     }
 
     public function checkinForm()

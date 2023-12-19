@@ -86,6 +86,7 @@
     </div>
   </div>
   <a href="/booking/checkin">Passenger Check-In</a>
+  <a href="/logout">Logout</a>
 </div>
 
 </body>

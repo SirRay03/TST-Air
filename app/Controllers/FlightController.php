@@ -8,6 +8,9 @@ class FlightController extends ResourceController
 {
     public function addFlightPage()
     {
+        if (!session()->get('log')) {
+            return redirect()->to('/login');
+        }
         $model = model(Flight::class);
         $airportModel = model(Airport::class);
         $airports = $airportModel->getAirport();
@@ -25,6 +28,9 @@ class FlightController extends ResourceController
 
     public function viewFlightPage()
     {
+        if (!session()->get('log')) {
+            return redirect()->to('/login');
+        }
         $model = model(Flight::class);
         $airportModel = model(Airport::class);
         $flights = $model->getAllFlights();
@@ -51,20 +57,5 @@ class FlightController extends ResourceController
         $model = model(Flight::class);
         $model->deleteFlight($id);
         return redirect()->to('/flight');
-    }
-
-    public function searchFlightPage()
-    {
-        $model = model(Flight::class);
-        $airportModel = model(Airport::class);
-        $airports = $airportModel->getAirport();
-        return view('navbar').view('search_flight', ['airports' => $airports]);
-    }
-
-    public function search()
-    {
-        $model = model(Flight::class);
-        $flights = $model->getFlights($this->request->getGet('origin_id'), $this->request->getGet('destination_id'), $this->request->getGet('schedule'), $this->request->getGet('capacity'));
-        return view('navbar').view('search_result', ['flights' => $flights]);
     }
 }

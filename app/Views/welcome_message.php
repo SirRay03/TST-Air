@@ -60,12 +60,19 @@
 <body>
     <div class="header">
         <h1>Welcome to Our Airline</h1>
-        <!-- Add the buttons for the services -->
-        <a href="/flight" class="button">View Flights</a>
-        <a href="/airport" class="button">View Airports</a>
-        <a href="/flight/add-flight" class="button">Add Flight</a>
-        <a href="/airport/add-airport" class="button">Add Airport</a>
-        <a href="/booking/checkin" class="button">Passenger Check-In</a>
+        <!-- if no session found, show different menu -->
+        <?php if (!session()->get('log')): ?>
+            <a href="/login" class="button">Login</a>
+            <a href="/booking/checkin" class="button">Passenger Check-In</a>
+        <?php else: ?>
+            <!-- Add the buttons for the services -->
+            <a href="/flight" class="button">View Flights</a>
+            <a href="/airport" class="button">View Airports</a>
+            <a href="/flight/add-flight" class="button">Add Flight</a>
+            <a href="/airport/add-airport" class="button">Add Airport</a>
+            <a href="/booking/checkin" class="button">Passenger Check-In</a>
+            <a href="/logout" class="button">Logout</a>
+        <?php endif; ?>
     </div>
     <div class="main">
         <h2>About Us</h2>
