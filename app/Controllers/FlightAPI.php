@@ -13,15 +13,17 @@ class FlightAPI extends ResourceController
         $destination = $this->request->getVar('destination');
         $date = $this->request->getVar('date');
         $capacity = $this->request->getVar('capacity');
+
         $result = $model->getFlights($origin, $destination, $date, $capacity);
         if ($result) {
             $data = [
                 'message' => 'success',
                 'flights' => $result
-            ];
+            ];  
         } else {
             $data = [
                 'message' => 'failed',
+                // 'flights' => [$origin, $destination, $date, $capacity]
                 'flights' => []
             ];
         }

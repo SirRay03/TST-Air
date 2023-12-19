@@ -1,0 +1,121 @@
+CRITICAL - 2023-12-19 01:22:00 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 01:22:12 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 01:31:11 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 01:35:59 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 01:38:43 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 01:40:09 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(16): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 01:40:49 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(22): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 01:42:27 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 16.
+ 1 APPPATH\Models\Flight.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 16)
+ 2 APPPATH\Controllers\FlightAPI.php(17): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 01:47:04 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(17): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 03:13:40 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(17): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 03:14:31 --> Attempt to read property "id" on null
+in APPPATH\Models\Flight.php on line 11.
+ 1 APPPATH\Models\Flight.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\xampp\\htdocs\\TST-Air\\app\\Models\\Flight.php', 11)
+ 2 APPPATH\Controllers\FlightAPI.php(17): App\Models\Flight->getFlights(null, null, null, null)
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 04:22:49 --> "Passed" is an invalid log level.
+in VENDORPATH\codeigniter4\framework\system\Log\Logger.php on line 260.
+ 1 VENDORPATH\codeigniter4\framework\system\Log\Logger.php(260): CodeIgniter\Log\Exceptions\LogException::forInvalidLogLevel('Passed')
+ 2 SYSTEMPATH\Common.php(810): CodeIgniter\Log\Logger->log('Passed', 'Passed', [])
+ 3 APPPATH\Models\Flight.php(24): log_message('Passed', 'Passed')
+ 4 APPPATH\Controllers\FlightAPI.php(17): App\Models\Flight->getFlights('CGK', 'HLP', '2023-12-17', '1')
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 04:22:52 --> "Passed" is an invalid log level.
+in VENDORPATH\codeigniter4\framework\system\Log\Logger.php on line 260.
+ 1 VENDORPATH\codeigniter4\framework\system\Log\Logger.php(260): CodeIgniter\Log\Exceptions\LogException::forInvalidLogLevel('Passed')
+ 2 SYSTEMPATH\Common.php(810): CodeIgniter\Log\Logger->log('Passed', 'Passed', [])
+ 3 APPPATH\Models\Flight.php(24): log_message('Passed', 'Passed')
+ 4 APPPATH\Controllers\FlightAPI.php(17): App\Models\Flight->getFlights('CGK', 'HLP', '2023-12-17', '1')
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\FlightAPI->getFlight()
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlightAPI))
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TST-Air\\public\\index.php')

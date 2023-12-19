@@ -4,20 +4,29 @@ use CodeIgniter\Model;
 
 class Flight extends Model{
     public function getFlights($origin, $destination, $date, $capacity)
-    {
-        $db = \Config\Database::connect();
+{
+    $db = \Config\Database::connect();
 
-        $query = $db->query('SELECT * FROM flight WHERE origin_id = ? AND destination_id = ? AND DATE(schedule) = ?', [$origin, $destination, $date]);
-        $id = $query->getRow()->id;
+    $query = $db->query('SELECT * FROM flight WHERE origin_id = ? AND destination_id = ? AND DATE(schedule) = ?', [$origin, $destination, $date]);
 
-        $isEmpty = $db->query('SELECT count(*) as count FROM booking WHERE flight_id = ?', [$id])->getRow()->count;
+    $row = $query->getRow();
 
-        if($isEmpty < $capacity){
+    if ($row !== null) {
+        $id = $row->id;
+
+        $isEmpty = $db->query('SELECT COUNT(*) as count FROM booking WHERE flight_id = ?', [$id])->getRow()->count;
+
+        if ($isEmpty < $capacity) {
             return $query->getResult();
-        }else{
+        } else {
             return false;
         }
+    } else {
+        // Handle the case when no rows are returned
+        return false;
     }
+}
+
 
     public function getAllFlights()
     {
