@@ -45,3 +45,6 @@ $routes->group('flight', ['namespace' => 'App\Controllers'], function($routes) {
 $routes->get('login', 'LoginController::index');
 $routes->post('login-process', 'LoginController::loginProcess');
 $routes->get('logout', 'LoginController::logout');
+
+// Finance
+$routes->get('finance-dashboard', 'FinanceController::viewDashboard');

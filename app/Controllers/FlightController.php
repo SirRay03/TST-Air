@@ -8,9 +8,9 @@ class FlightController extends ResourceController
 {
     public function addFlightPage()
     {
-        if (!session()->get('log')) {
-            return redirect()->to('/login');
-        }
+            if (!session()->get('log')) {
+                return redirect()->to('/login');
+            }
         $model = model(Flight::class);
         $airportModel = model(Airport::class);
         $airports = $airportModel->getAirport();

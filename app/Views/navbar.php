@@ -86,7 +86,7 @@
     </div>
   </div>
   <a href="/booking/checkin">Passenger Check-In</a>
-  <a href="/financial-recap">Financial Recap</a>
+  <a href="/finance-dashboard">Financial Recap</a>
   <a href="/logout">Logout</a>
 </div>
 

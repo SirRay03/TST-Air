@@ -79,7 +79,7 @@
             <a href="/airport" class="button">View Airports</a>
             <a href="/flight/add-flight" class="button">Add Flight</a>
             <a href="/airport/add-airport" class="button">Add Airport</a>
-            <a href="/financial-recap" class="button">Financial Recap</a>
+            <a href="/finance-dashboard" class="button">Financial Recap</a>
             <a href="/logout" class="button">Logout</a>
         <?php endif; ?>
     </div>
