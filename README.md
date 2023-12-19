@@ -71,7 +71,7 @@ Sistem penerbangan yang kami kembangkan merupakan sistem yang menyediakan jadwal
 
 5. Run Apache dan MySQL pada XAMP
 
-6. Masukkan database onlyflight untuk sistem onlyflights dan database ticketing untuk sistem TST-Ticketing pada [localhost:/](http://localhost/phpmyadmin), sesuaikan dengan file .env anda
+6. Masukkan database onlyflight untuk sistem onlyflights dan database ticketing untuk sistem TST-Ticketing pada [localhost:/](http://localhost/phpmyadmin) kemudian sesuaikan dengan file .env anda
 
 7. Setup aplikasi menggunakan command berikut
 
@@ -112,6 +112,6 @@ password: password123
 
 
 ## Documentation
-[Documentation]([https://docs.google.com/document/d/11VVUq3s6EbKkoQnYY_Sl7ymabZufGoWuneDM68WyuzY](https://docs.google.com/document/d/1FnAY38R1CNYTHnfE0iYoWzLuyNaCG9eu3U7hV4vAC2U/edit?usp=sharing)https://docs.google.com/document/d/1FnAY38R1CNYTHnfE0iYoWzLuyNaCG9eu3U7hV4vAC2U/edit?usp=sharing)
+[Documentation](https://docs.google.com/document/d/1FnAY38R1CNYTHnfE0iYoWzLuyNaCG9eu3U7hV4vAC2U/edit?usp=sharing)
 
 *Development processes and interfaces are provided in the document.*
