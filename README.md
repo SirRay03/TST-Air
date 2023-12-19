@@ -1,59 +1,113 @@
-# CodeIgniter 4 Framework
+<div align="center">
+    <h1>Tugas Besar</h1>
+    <h3>II3160 - Teknologi Sistem Terintegrasi</h3>
+</div>
+<br>
 
-## What is CodeIgniter?
+## System Overview
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+Sistem penerbangan yang kami kembangkan merupakan sistem yang menyediakan jadwal penerbangan pada maskapai tersebut.
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Core Domain
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+<table>Core domain dari sistem penerbangan yaitu:
+  <tr>
+    Manajemen Jadwal Penerbangan: Mengelola jadwal penerbangan untuk setiap rute dan pesawat.
+  </tr>
+  <tr>
+    Manajemen Kursi: Mengatur kesediaan kursi dan memberikan nomor kursi kepada penumpang.
+  </tr>
+  <tr>
+    Manajemen Keuangan: Mengambil rekapitulasi keuangan dan melakukan penagihan.
+  </tr>
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+## Team Members
 
-## Important Change with index.php
+<table>
+    <tr align="center">
+        <th>No.</th>
+        <th>Nama</th>
+        <th>NIM</th>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td>Kevin Prayoga Abdinegara</td>
+        <td>18221141</td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>Rayhan Nugraha Putra</td>
+        <td>18221149</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>Hans Stephano Edbert N</td>
+        <td>18221171</td>
+    </tr>
+</table>
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+## Tech Stack
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+- PHP
+- Codeigniter 4 
+- Bootstrap
+- MySQL
+- phpMyAdmin
+- Postman
+- Github dan Git
+- Visual Studio Code
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## How to run
 
-## Repository Management
+### By local
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+1. Clone respository ini dan [repository TST-Ticket]([https://github.com/SirRay03/TST-Air](https://github.com/kevinprayoga/TST-Ticket))
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+2. Buka dan masuk ke dalam kedua repository di jendela yang berbeda
 
-## Contributing
+3. Copy content .env.example ke dalam .env
 
-We welcome contributions from the community.
+4. Download & install XAMPP [Link](https://www.apachefriends.org/)
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+5. Setup aplikasi menggunakan command berikut
 
-## Server Requirements
+```
+composer install
+composer update
+```
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+5. Jalankan aplikasi menggunakan command berikut pada terminal setiap jendela
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+OnlyFlights ```php spark serve --port 8080```
+TST-Ticket  ```php spark serve --port 3000```
 
-> **Warning**
-> The end of life date for PHP 7.4 was November 28, 2022. If you are
-> still using PHP 7.4, you should upgrade immediately. The end of life date
-> for PHP 8.0 will be November 26, 2023.
+6. Service TST-Ticket berjalan pada http://localhost:3000 dan OnlyFlights berjalan pada http://localhost:8080
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+7. Berikut informasi akun yang dapat digunakan untuk login
+```
+# Login TST-Ticket
+username: ilmagita
+password: akujember
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+# Login Onlyflights
+username: admin@onlyflights.18s
+password: password123
+```
+
+## Features
+
+1. **Login** - Dengan Melakukan Login, admin mampu mengakses fitur yang ada di dalamnya seperti penambahan jadwal penerbangan, melakukan check-in dan mengelola jadwal
+
+2. **Add/Edit/Delete Penerbangan** - Admin dapat mengelola jadwal penerbangan berdasarkan yang diinginkan
+
+3. **Add/Edit/Delete Bandara** - Admin dapat mengelola jadwal bandara berdasarkan yang diinginkan
+
+4. **Check-in** - Admin dapat melakukan check-in untuk passenger yang ingin melakukan check-in untuk melakukan validasi dan pemberian nomor kursi
+
+6. **Recapitulations Finance** - Admin dapat melihat rekapitulasi keuangan yang per bulan pada setiap penerbangan
+
+
+## Documentation
+[Documentation]([https://docs.google.com/document/d/11VVUq3s6EbKkoQnYY_Sl7ymabZufGoWuneDM68WyuzY](https://docs.google.com/document/d/1FnAY38R1CNYTHnfE0iYoWzLuyNaCG9eu3U7hV4vAC2U/edit?usp=sharing)https://docs.google.com/document/d/1FnAY38R1CNYTHnfE0iYoWzLuyNaCG9eu3U7hV4vAC2U/edit?usp=sharing)
+
+*Development processes and interfaces are provided in the document.*
