@@ -15,7 +15,7 @@ class Booking extends Model
     {
         $db = \Config\Database::connect();
         $flight_id = $db->query('SELECT flight_id FROM booking WHERE pnr = ?', [$pnr])->getRow()->flight_id;
-        $query = $db->query('UPDATE booking SET paid_at = NOW(), seat_num = COALESCE((SELECT max(seat_num) FROM booking WHERE flight_id = ?), 0)+1 WHERE pnr = ?', [$flight_id, $pnr]);
+        $query = $db->query('UPDATE booking SET seat_num = COALESCE((SELECT max(seat_num) FROM booking WHERE flight_id = ?), 0)+1 WHERE pnr = ?', [$flight_id, $pnr]);
         return $query;
     }
 

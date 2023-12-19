@@ -1431,3 +1431,368 @@ in APPPATH\Controllers\BookingAPI.php on line 99.
  4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 11:55:27 --> Attempt to read property "origin_id" on null
+in APPPATH\Controllers\BookingAPI.php on line 106.
+ 1 APPPATH\Controllers\BookingAPI.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "origin_id" on null', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 106)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:35:04 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(32): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:38:10 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(32): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:39:02 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(32): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:39:20 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(32): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:39:22 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(32): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:39:38 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(32): App\Models\BookingAuth->getDataAuthentication('083fb78f891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78f891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:40:19 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(32): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:40:31 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(32): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:43:20 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(32): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:46:02 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(33): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:46:41 --> Declaration of App\Controllers\BookingAPI::create($seg1, $seg2) must be compatible with CodeIgniter\RESTful\ResourceController::create()
+in APPPATH\Controllers\BookingAPI.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 14:46:48 --> Declaration of App\Controllers\BookingAPI::create($seg1, $seg2) must be compatible with CodeIgniter\RESTful\ResourceController::create()
+in APPPATH\Controllers\BookingAPI.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 14:46:58 --> Declaration of App\Controllers\BookingAPI::create($seg1, $seg2) must be compatible with CodeIgniter\RESTful\ResourceController::create()
+in APPPATH\Controllers\BookingAPI.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 14:47:53 --> Declaration of App\Controllers\BookingAPI::create($seg1, $seg2) must be compatible with CodeIgniter\RESTful\ResourceController::create()
+in APPPATH\Controllers\BookingAPI.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-19 14:52:09 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(35): App\Models\BookingAuth->getDataAuthentication(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:52:18 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(35): App\Models\BookingAuth->getDataAuthentication(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:52:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(35): App\Models\BookingAuth->getDataAuthentication(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create('')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:54:06 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(35): App\Models\BookingAuth->getDataAuthentication(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:54:21 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(35): App\Models\BookingAuth->getDataAuthentication(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:54:50 --> Undefined variable $checksum
+in APPPATH\Controllers\BookingAPI.php on line 37.
+ 1 APPPATH\Controllers\BookingAPI.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $checksum', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:54:51 --> Undefined variable $checksum
+in APPPATH\Controllers\BookingAPI.php on line 37.
+ 1 APPPATH\Controllers\BookingAPI.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $checksum', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:54:59 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(35): App\Models\BookingAuth->getDataAuthentication(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 14:56:11 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 8.
+ 1 APPPATH\Models\BookingAuth.php(8): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:02:32 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(35): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:02:37 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): count(Object(stdClass))
+ 2 APPPATH\Controllers\BookingAPI.php(35): App\Models\BookingAuth->getDataAuthentication('083fb78fe99d91ec891dc97e2ac10f14', '499de4ba50697d484d8e4de59a32c3bb')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:02:59 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(35): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:03:34 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(65): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:04:47 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:04:48 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:04:49 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:04:50 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:04:50 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): count(null)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:07:15 --> Undefined property: stdClass::$count
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\BookingAuth.php', 10)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:07:16 --> Undefined property: stdClass::$count
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\BookingAuth.php', 10)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:07:17 --> Undefined property: stdClass::$count
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\BookingAuth.php', 10)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:07:17 --> Undefined property: stdClass::$count
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\BookingAuth.php', 10)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:07:18 --> Undefined property: stdClass::$count
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\BookingAuth.php', 10)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:07:18 --> Undefined property: stdClass::$count
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\BookingAuth.php', 10)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:07:19 --> Undefined property: stdClass::$count
+in APPPATH\Models\BookingAuth.php on line 10.
+ 1 APPPATH\Models\BookingAuth.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Models\\BookingAuth.php', 10)
+ 2 APPPATH\Controllers\BookingAPI.php(66): App\Models\BookingAuth->getDataAuthentication('abc', 'abc')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->testAuth()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:17:36 --> Undefined variable $pnr
+in APPPATH\Controllers\BookingAPI.php on line 114.
+ 1 APPPATH\Controllers\BookingAPI.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnr', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:18:58 --> Undefined variable $pnr
+in APPPATH\Controllers\BookingAPI.php on line 113.
+ 1 APPPATH\Controllers\BookingAPI.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnr', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:19:48 --> Undefined variable $pnr
+in APPPATH\Controllers\BookingAPI.php on line 113.
+ 1 APPPATH\Controllers\BookingAPI.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnr', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')
+CRITICAL - 2023-12-19 15:19:53 --> Undefined variable $pnr
+in APPPATH\Controllers\BookingAPI.php on line 113.
+ 1 APPPATH\Controllers\BookingAPI.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pnr', 'C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\app\\Controllers\\BookingAPI.php', 113)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\BookingAPI->checkinResult()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookingAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\RAYHAN\\PinHanPan\\TST-Air\\public\\index.php')

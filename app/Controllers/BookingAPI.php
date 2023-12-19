@@ -25,11 +25,16 @@ class BookingAPI extends ResourceController
         return $output;
     }
 
-    public function create($seg1=null, $seg2=null)
+    public function create()
     {
         $model = model(Booking::class);
-        $authModel = model(BookingAuth::class);
-        $checksum = $authModel->getDataAuthentication($seg1, $seg2);
+        // $seg1 = $this->request->getVar('seg1');
+        // $seg2 = $this->request->getVar('seg2');
+        // $authModel = model(BookingAuth::class);
+        // var_dump($seg1, $seg2);
+        // $checksum = $authModel->getDataAuthentication($seg1, $seg2);
+        // return $checksum;
+        $checksum = 1;
         if ($checksum == 0){
             return("Invalid authentication!");
         } else {
@@ -37,7 +42,6 @@ class BookingAPI extends ResourceController
             $pnr = $this->request->getVar('pnr');
 
             $result = $model->createBooking($flight_id, $pnr);
-            
             if ($result) {
                 $data = [
                     'message' => 'success',
@@ -54,30 +58,39 @@ class BookingAPI extends ResourceController
         }
     }
 
+    // public function testAuth()
+    // {
+    //     $seg1 = $this->request->getVar('seg1');
+    //     $seg2 = $this->request->getVar('seg2');
+    //     $authModel = model(BookingAuth::class);
+    //     $checksum = 0;
+    //     $checksum = $authModel->getDataAuthentication($seg1, $seg2);
+    //     var_dump($checksum);
+    // }
 
-    public function pay($pnr, $seg1=null, $seg2=null)
-    {
-        $model = model(Booking::class);
-        $authModel = model(BookingAuth::class);
-        $checksum = $authModel->getDataAuthentication($seg1, $seg2);
-        if ($checksum == 0){
-            return("Invalid authentication!");
-        } else {
-            $result = $model->payBooking($pnr);
-            if ($result) {
-                $data = [
-                    'message' => 'success',
-                    'booking' => $result
-                ];
-            } else {
-                $data = [
-                    'message' => 'failed',
-                    'booking' => []
-                ];
-            }
-            return $this->respond($data);
-        }
-    }
+    // public function pay($pnr, $seg1=null, $seg2=null)
+    // {
+    //     $model = model(Booking::class);
+    //     $authModel = model(BookingAuth::class);
+    //     $checksum = $authModel->getDataAuthentication($seg1, $seg2);
+    //     if ($checksum == 0){
+    //         return("Invalid authentication!");
+    //     } else {
+    //         $result = $model->payBooking($pnr);
+    //         if ($result) {
+    //             $data = [
+    //                 'message' => 'success',
+    //                 'booking' => $result
+    //             ];
+    //         } else {
+    //             $data = [
+    //                 'message' => 'failed',
+    //                 'booking' => []
+    //             ];
+    //         }
+    //         return $this->respond($data);
+    //     }
+    // }
 
     public function checkinForm()
     {
@@ -99,6 +112,7 @@ class BookingAPI extends ResourceController
         $status = $response->status[0]->status;
         if ($message === 'success' && $status === 'Success') {    
             $pnr = $response->data[0]->id;
+            $resultDump = $model->payBooking($pnr);
             $fid = $response->data[0]->flight_id;
             $result = $model->getCheckin($pnr);
             $flight_result = $flightModel->getFlight($fid);

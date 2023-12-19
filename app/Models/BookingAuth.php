@@ -4,7 +4,9 @@ use CodeIgniter\Model;
 class BookingAuth extends Model{
     function getDataAuthentication($id, $password){
         $db = \Config\Database::connect();
-        $query = $db->query('SELECT * FROM employee WHERE id = ? AND password = ?', [$id, $password]);
-        return count($query->getRow());
+        // $id = md5($id);
+        // $password = md5($password);
+        $query = $db->query('SELECT count(*) FROM employee WHERE id = ? AND password = ?', [$id, $password]);
+        return $query->getRow()->count;
     }
 }
